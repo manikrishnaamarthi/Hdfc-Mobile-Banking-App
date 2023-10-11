@@ -4,10 +4,18 @@ container:
   properties: {html: '@theme:standard-page.html'}
 components:
 - type: ColumnPanel
-  properties: {}
+  properties: {col_widths: '{}'}
   name: content_panel
   layout_properties: {slot: default}
+  components: []
 - type: FlowPanel
   properties: {}
   name: navbar_links
   layout_properties: {slot: nav-right}
+- type: Button
+  properties: {role: secondary-color, align: left, tooltip: '', border: '', enabled: true,
+    foreground: '', visible: true, text: hdfc, font_size: null, font: '', spacing_above: small,
+    icon_align: left_edge, spacing_below: small, italic: false, background: '', bold: false,
+    underline: false, icon: ''}
+  name: primary_color_1
+  layout_properties: {slot: title, grid_position: 'JTLVOM,CCJAFG'}
