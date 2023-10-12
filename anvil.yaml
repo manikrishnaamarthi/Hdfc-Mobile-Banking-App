@@ -8,10 +8,10 @@ services:
 startup: {type: form, module: Feedback}
 package_name: Date_12_10_2_23
 allow_embedding: false
-name: Date:12/10/2-23
+name: HDFC MOBILE BANKING APP
 runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
   server_spec: null}
-metadata: {logo_img: 'asset:hdfc-logo.png', title: HDFC MOBILE BANKING APP}
+metadata: {logo_img: 'asset:hdfc-logo.png', title: ''}
 startup_form: null
 db_schema:
   feedback:
