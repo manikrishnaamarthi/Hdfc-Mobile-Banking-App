@@ -1,11 +1,11 @@
-from ._anvil_designer import FeedbackTemplate
+from ._anvil_designer import Create_AccountTemplate
 from anvil import *
 import anvil.server
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 
-class Feedback(FeedbackTemplate):
+class Create_Account(Create_AccountTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
