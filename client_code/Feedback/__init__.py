@@ -18,7 +18,7 @@ class Feedback(FeedbackTemplate):
    password = self.password_box.text
 
    anvil.server.call('add_feedback', name, email, password)
-   Notification("Details Submitted!").show()
+   Notification("Account Created succesfully!").show()
    self.clear_inputs()
 
   
