@@ -26,6 +26,11 @@ class Create_Account(Create_AccountTemplate):
     self.name_box.text=""
     self.email_box.text=""
     self.password_box.text=""
+
+  def name_box_pressed_enter(self, **event_args):
+    """This method is called when the user presses Enter in this text box"""
+    pass
+
     
    
 

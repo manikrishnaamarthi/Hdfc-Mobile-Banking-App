@@ -53,6 +53,7 @@ components:
         background: '', bold: false, underline: false}
       name: name_box
       layout_properties: {grid_position: 'LLPMFK,XXBQPE'}
+      event_bindings: {pressed_enter: name_box_pressed_enter}
   - type: ColumnPanel
     properties: {role: card, col_widths: '{}'}
     name: card_2
