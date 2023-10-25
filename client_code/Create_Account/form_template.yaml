@@ -5,7 +5,7 @@ container:
 components:
 - type: ColumnPanel
   properties: {col_widths: '{}'}
-  name: content_panel
+  name: content_panel_feeedback
   layout_properties: {slot: default}
   components:
   - type: ColumnPanel
@@ -54,6 +54,8 @@ components:
       name: name_box
       layout_properties: {grid_position: 'LLPMFK,XXBQPE'}
       event_bindings: {pressed_enter: name_box_pressed_enter}
+      data_bindings:
+      - {property: text, code: 'self.item[''name'']', writeback: true}
   - type: ColumnPanel
     properties: {role: card, col_widths: '{}'}
     name: card_2
@@ -73,6 +75,8 @@ components:
         background: '', bold: false, underline: false}
       name: email_box
       layout_properties: {grid_position: 'LSLOGK,VQDXTR'}
+      data_bindings:
+      - {property: text, code: 'self.item[''email'']', writeback: true}
   - type: ColumnPanel
     properties: {role: card, col_widths: '{}'}
     name: card_3
@@ -92,6 +96,8 @@ components:
         background: '', bold: false, underline: false}
       name: password_box
       layout_properties: {grid_position: 'JOFRNV,EHDNPN'}
+      data_bindings:
+      - {property: text, code: 'self.item[''password'']', writeback: true}
   - type: Button
     properties: {role: primary-color, align: center, tooltip: '', border: '', enabled: true,
       foreground: '', visible: true, text: submit, font_size: null, font: '', spacing_above: small,

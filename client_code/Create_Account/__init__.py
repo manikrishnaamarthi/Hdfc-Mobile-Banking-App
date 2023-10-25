@@ -30,7 +30,8 @@ class Create_Account(Create_AccountTemplate):
   def name_box_pressed_enter(self, **event_args):
     """This method is called when the user presses Enter in this text box"""
     pass
-
+    
+    self.content_panel_feeedback.items=app_tables.feedback.search()
     
    
 
