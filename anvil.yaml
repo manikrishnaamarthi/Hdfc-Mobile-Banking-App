@@ -15,7 +15,7 @@ metadata: {logo_img: 'asset:hdfc-logo.png', title: ''}
 startup_form: null
 db_schema:
   feedback:
-    client: none
+    client: full
     server: full
     columns:
     - name: name

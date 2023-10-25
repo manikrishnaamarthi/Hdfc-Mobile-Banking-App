@@ -19,6 +19,8 @@ class Create_Account(Create_AccountTemplate):
 
    anvil.server.call('add_feedback', name, email, password)
    Notification("Account Created succesfully!").show()
+   open_form('Create_Account.Form1')
+   
    self.clear_inputs()
 
   
@@ -31,7 +33,7 @@ class Create_Account(Create_AccountTemplate):
     """This method is called when the user presses Enter in this text box"""
     pass
     
-    self.content_panel_feeedback.items=app_tables.feedback.search()
+    
     
    
 

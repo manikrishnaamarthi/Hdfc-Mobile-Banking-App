@@ -1,0 +1,21 @@
+container: {type: DataRowPanel}
+components:
+- type: Label
+  properties: {}
+  name: label_1
+  layout_properties: {column: ZOZYHM}
+  data_bindings:
+  - {property: text, code: 'self.item[''name'']'}
+- type: Label
+  properties: {}
+  name: label_2
+  layout_properties: {column: SWJLQP}
+  data_bindings:
+  - {property: text, code: 'self.item[''email'']'}
+- type: Label
+  properties: {}
+  name: label_3
+  layout_properties: {column: DIVPRJ}
+  data_bindings:
+  - {property: text, code: 'self.item[''password'']'}
+is_package: true

@@ -1,0 +1,39 @@
+is_package: true
+container:
+  type: HtmlTemplate
+  properties: {html: '@theme:standard-page.html'}
+components:
+- type: ColumnPanel
+  properties: {col_widths: '{}'}
+  name: content_panel
+  layout_properties: {slot: default}
+  components:
+  - type: DataGrid
+    properties:
+      role: null
+      columns:
+      - {id: ZOZYHM, title: name, data_key: column_1, $$hashKey: 'object:8899'}
+      - {id: SWJLQP, title: email, data_key: column_2, $$hashKey: 'object:8900'}
+      - {id: DIVPRJ, title: password, data_key: column_3, $$hashKey: 'object:8901'}
+      auto_header: true
+      tooltip: ''
+      border: ''
+      foreground: ''
+      rows_per_page: 20
+      visible: true
+      wrap_on: never
+      show_page_controls: true
+      spacing_above: small
+      spacing_below: small
+      background: ''
+    name: data_grid_1
+    layout_properties: {grid_position: 'QFBWZC,HYZRLI'}
+    components:
+    - type: RepeatingPanel
+      properties: {spacing_above: none, spacing_below: none, item_template: Create_Account.Form1.RowTemplate1}
+      name: repeating_panel_feedback
+      layout_properties: {}
+- type: FlowPanel
+  properties: {}
+  name: navbar_links
+  layout_properties: {slot: nav-right}
